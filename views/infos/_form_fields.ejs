@@ -1,0 +1,57 @@
+<div class="form-row">
+  <div class="form-item">
+    <label>Title</label>
+    <input type="text" name="name" value="<%= info.name %>"> 
+    <!-- type number , name temp -->
+  </div>
+  <div class="form-item">
+    <label>Country</label>
+    <select name="country">
+      <% countrys.forEach(country => { %>
+        <% if (country.id === info.country) { %>
+          <option selected label="<%= country.name %>" value="<%= country.id %>">
+        <% } else { %>
+          <option label="<%= country.name %>" value="<%= country.id %>">
+        <% } %>
+      <% }) %>
+    </select>
+  </div>
+</div>
+
+<div class="form-row">
+  <div class="form-item">
+    <label>Lowest Temperature date</label>
+    <input type="date" name="lowestTempDate"
+          value="<%= info.lowestTempDate == null ? '' : info.lowestTempDate.toISOString().split('T')[0] %>">
+  </div>
+  <div class="form-item">
+    <label>Lowest Temperature</label>
+    <input type="number" step="0.01" name="lowestTemp"
+          value="<%= info.lowestTemp %>">
+  </div>
+
+</div> 
+<div class="form-row">
+  <div class="form-item">
+    <label>Highest Temperature date</label>
+    <input type="date" name="highestTempDate"
+          value="<%= info.highestTempDate == null ? '' : info.highestTempDate.toISOString().split('T')[0] %>">
+  </div>
+  <div class="form-item">
+    <label>Highest Temperature</label>
+    <input type="number" step="0.01" name="highestTemp"
+          value="<%= info.highestTemp%>">
+  </div>
+
+</div> 
+
+<div class="form-row">
+  <div class="form-item form-item-no-grow">
+    <label>Flag Picture</label>
+    <input type="file" name="infor" class="quote-quoter filepond">
+  </div>
+  <div class="form-item">
+    <label>Description</label>
+    <textarea name="description"><%= info.description %></textarea>
+  </div>
+</div>

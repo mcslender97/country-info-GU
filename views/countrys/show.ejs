@@ -1,0 +1,10 @@
+<h2 class="page-header"><%= country.name %></h2>
+<div class="btn-row">
+  <a class="btn btn-primary" href="/countrys/<%= country.id %>/edit">Edit</a>
+  <%- include('../partials/deleteForm',
+              { url: `/countrys/${country.id}` }) %>
+</div>
+<% if (infosByCountry.length > 0) { %>
+  <h2 class="page-header">Infos By Country</h2>
+  <%- include('../partials/quoteGrid', { infos: infosByCountry }) %>
+<% } %>

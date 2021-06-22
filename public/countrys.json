@@ -1,0 +1,69 @@
+/* 1 */
+{
+    "_id" : ObjectId("5fb0a484aa912f3c049e7023"),
+    "name" : "Norway",
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5fb0c173de0a68533ccbfa77"),
+    "name" : "Poland",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5fb0c19bde0a68533ccbfa79"),
+    "name" : "Portugal",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5fb0c1a6de0a68533ccbfa7b"),
+    "name" : "Romania",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5fb0c1aede0a68533ccbfa7d"),
+    "name" : "Russia",
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5fb0c1b3de0a68533ccbfa7f"),
+    "name" : "Serbia",
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5fb0c1bade0a68533ccbfa81"),
+    "name" : "Slovakia",
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5fb0c1bfde0a68533ccbfa83"),
+    "name" : "Slovenia",
+    "__v" : 0
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5fb0c1d4de0a68533ccbfa86"),
+    "name" : "Spain",
+    "__v" : 0
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5fb0c1d9de0a68533ccbfa88"),
+    "name" : "Sweden",
+    "__v" : 0
+}

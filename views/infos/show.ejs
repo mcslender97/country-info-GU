@@ -1,0 +1,25 @@
+<h2 class="page-header"><%= info.name %></h2>
+<div class="quote-details">
+  <div>
+    <img class="quote-quoter" src="<%= info.inforImagePath %>">
+    <div class="quote-details-btn-grid">
+      <a class="btn btn-primary" href="/infos/<%= info.id %>/edit">Edit</a>
+      <%- include('../partials/deleteForm', { url: `/infos/${info.id}` }) %>
+      <a class="btn btn-primary quote-details-author-button" href="/countrys/<%= info.country.id %>">View Country</a>
+    </div>
+  </div>
+  <div class="quote-details-grid">
+    <div class="quote-details-label">Country:</div>
+    <div><%= info.country.name %></div>
+    <div class="quote-details-label">Lowest Temperature Date</div>
+    <div><%= info.lowestTempDate.toDateString() %></div>
+    <div class="quote-details-label">Lowest Temperature:</div>
+    <div><%= info.lowestTemp %></div>
+    <div class="quote-details-label">Highest Temperature Date</div>
+    <div><%= info.highestTempDate.toDateString() %></div>
+    <div class="quote-details-label">Highest Temperature:</div>
+    <div><%= info.highestTemp %></div>
+    <div class="quote-details-label">Description:</div>
+    <div><%= info.description %></div>
+  </div>
+</div>

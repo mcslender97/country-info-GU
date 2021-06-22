@@ -1,0 +1,60 @@
+:root {
+  --quote-quoter-width: 325px;
+  --quote-quoter-width-large: 200px;
+  --quote-quoter-aspect-ratio: 1.4;
+}
+
+.quote-quoter {
+  width: var(--quote-quoter-width);
+  height: calc(var(--quote-quoter-width) / var(--quote-quoter-aspect-ratio));
+}
+
+.quote-quoter-large {
+  --quote-quoter-width: var(--quote-quoter-width-large);
+}
+
+.quote-grid {
+  display: grid;
+  justify-content: center;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, var(--quote-quoter-width));
+}
+
+.quote-grid-large {
+  grid-template-columns: repeat(auto-fill, var(--quote-quoter-width-large));
+}
+
+.quote-details {
+  display: flex;
+}
+
+.quote-details-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.quote-details-grid {
+  display: grid;
+  align-content: flex-start;
+  align-items: center;
+  grid-gap: 1rem;
+  grid-template-columns: auto auto;
+}
+
+.quote-details-btn-grid {
+  display: grid;
+  justify-items: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  grid-template-areas:
+    "edit delete"
+    "author author";
+  grid-gap: .5rem;
+  margin-top: .5rem;
+}
+
+.quote-details-author-button {
+  grid-area: author;
+  justify-self: stretch;
+}

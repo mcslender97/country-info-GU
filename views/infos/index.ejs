@@ -1,0 +1,24 @@
+<h2 class="page-header">Search Info</h2>
+<form action="/infos" method="GET">
+  <div class="form-row">
+    <div class="form-item">
+      <label>Info name</label>
+      <input type="text" name="name" value="<%= searchOptions.name %>">
+    </div>
+  </div>
+  <!-- <div class="form-row">
+    <div class="form-item">
+      <label>Published After</label>
+      <input type="date" name="publishedAfter" value="<%= searchOptions.publishedAfter %>">
+    </div>
+    <div class="form-item">
+      <label>Published Before</label>
+      <input type="date" name="publishedBefore" value="<%= searchOptions.publishedBefore %>">
+    </div>
+  </div> -->
+  <div class="form-row form-row-end">
+    <button class="btn btn-primary" type="submit">Search</button>
+  </div>
+</form>
+<br>
+<%- include('../partials/quoteGrid', { infos: infos, large: true }) %>

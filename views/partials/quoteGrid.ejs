@@ -1,0 +1,9 @@
+<% quoteCoverClass = locals.large ? 'quote-quoter-large' : '' %>
+<% quoteGridClass = locals.large ? 'quote-grid-large' : '' %>
+<div class="quote-grid <%= quoteGridClass %>">
+  <% infos.forEach(info => { %>
+    <a href="/infos/<%= info.id %>">
+      <img class="quote-quoter <%= quoteCoverClass %>" src="<%= info.inforImagePath %>">
+    </a>
+  <% }) %>
+</div>
