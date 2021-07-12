@@ -1,6 +1,6 @@
 # country-info-GU
 Country MERN app that display country info, including temperatures
-Requirie MongoDBCompass, Node, nodemon
+Requirie MongoDB (Compass), Node, nodemon
 
 To setup, use:
 npm i
